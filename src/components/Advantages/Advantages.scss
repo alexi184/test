@@ -1,0 +1,35 @@
+@import "../../styles/variables";
+
+.advantages-section {
+  background: $white-three;
+
+  .section-description {
+    margin-bottom: 40px;
+  }
+
+  &__list-item {
+    margin-bottom: 40px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__list-text {
+    margin-top: 20px;
+  }
+
+  &__list-img {
+    text-align: center;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .advantages-section__list-item {
+    max-width: 384px;
+    margin-bottom: 0;
+  }
+}

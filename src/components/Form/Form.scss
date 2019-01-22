@@ -1,0 +1,95 @@
+@import "../../styles/variables";
+@import "../../styles/react-select";
+
+.form-section {
+   padding-top: 0;
+
+   .section-description {
+      margin-bottom: 20px;
+   }
+
+  /* &__form {
+      width: 100%;
+   }*/
+
+   &__form-row {
+     /* width: 100%;*/
+      margin-bottom: 20px;
+
+      &:last-of-type {
+         margin-bottom: 0;
+      }
+
+      select, input {
+         width: 100%;
+         outline: 0;
+      }
+
+      input[type="text"] {
+         position: relative;
+         width: 100%;
+         font-family: $montserrat;
+         font-weight: normal;
+         height: 50px;
+         border-radius: 5px;
+         border: 1px solid $brown-grey;
+         font-size: 14px;
+         color: $black-two;
+         padding: 13px 15px;
+         box-sizing: border-box;
+         &:focus {
+            border-color: $grass;
+         }
+      }
+
+      input[type="submit"] {
+         width: 100%;
+         font-family: $montserrat;
+         font-weight: 700;
+         height: 50px;
+         border-radius: 25px;
+         background: $grass;
+         border: none;
+         outline: none;
+         font-size: 14px;
+         color: $white-two;
+         cursor: pointer;
+         transition: background 0.3s;
+         &:hover {
+            background: lighten($grass, 5%);
+         }
+      }
+
+      input[type="text"]::-webkit-input-placeholder {
+         font-size: 14px;
+         color: $black-two;
+         transition: all 0.3s;
+      }
+      input[type="text"]::-moz-placeholder {
+         font-size: 14px;
+         color: $black-two;
+         transition: all 0.3s;
+      }
+      input[type="text"]::-ms-input-placeholder {
+         font-size: 14px;
+         color: $black-two;
+         transition: all 0.3s;
+      }
+
+      input[type="text"]:focus::-webkit-input-placeholder {
+         color: $cool-grey;
+         font-size: 12px;
+      }
+
+      input[type="text"]:focus::-moz-placeholder {
+         color: $cool-grey;
+         font-size: 12px;
+      }
+
+      input[type="text"]:focus::-ms-input-placeholder {
+         color: $cool-grey;
+         font-size: 12px;
+      }
+   }
+}
+

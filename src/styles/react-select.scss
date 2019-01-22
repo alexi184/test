@@ -1,0 +1,76 @@
+@import "variables";
+
+.react-select-container {
+   color: #000;
+
+   .react-select {
+      &__indicator {
+         svg {
+            transition: all 0.3s;
+            path {
+               fill: $grass;
+            }
+         }
+      }
+
+      &__indicator-separator {
+         display: none;
+      }
+
+      &__value-container {
+         height: 50px;
+      }
+
+      &__control {
+         border-radius: 5px;
+         border-color: $brown-grey;
+
+         &:hover {
+            border-color: $grass;
+         }
+
+         &--is-focused {
+            border-color: $grass;
+            box-shadow: none;
+
+            svg {
+               transform: rotate(180deg);
+            }
+         }
+      }
+
+      &__menu {
+         display: block!important;
+         box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+         border-radius: 5px;
+         /*top: 50px;*/
+      }
+
+      &__menu-list {
+         padding: 10px 0;
+      }
+
+      &__option {
+         + .react-select__option {
+            border-top: 1px solid $white-three;
+         }
+
+         &:active {
+            background: rgba($grass, .7);
+            color: #fff;
+         }
+
+         &--is-focused {
+            background: rgba($grass, .7);
+            color: #fff;
+         }
+
+         &--is-selected {
+            background: rgba($grass, .1);
+            color: #000;
+         }
+
+      }
+   }
+
+}

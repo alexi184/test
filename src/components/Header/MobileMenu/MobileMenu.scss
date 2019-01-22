@@ -1,0 +1,24 @@
+@import '../../../styles/variables';
+
+.mobile-nav {
+   padding: 20px 0;
+
+   .menu-list {
+
+      &__item {
+         margin-bottom: 10px;
+         &:last-of-type {
+            margin-bottom: 0;
+         }
+      }
+
+      &__link {
+         text-decoration: none;
+         color: $greyish-brown;
+         transition: color 0.2s;
+         &:hover {
+            color: $grass;
+         }
+      }
+   }
+}

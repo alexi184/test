@@ -1,0 +1,79 @@
+@import '../../styles/variables';
+
+.options-section {
+
+}
+
+.options-list {
+  color: $greyish-brown;
+
+  &__item {
+    padding: 20px 0;
+    border-bottom: 2px solid $white;
+    &:first-child {
+      padding-top: 0;
+    }
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+  }
+
+  &__row {
+    display: flex;
+    margin-bottom: 7px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__cell {
+    /*margin-left: 10px;*/
+      &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &__cell_bold {
+    font-weight: 600;
+  }
+
+  &__cell_green {
+    color: $grass;
+  }
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+
+    tbody {
+      tr {
+        &:last-of-type {
+          border-bottom: none;
+          td {
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+
+    th{
+      font-weight: normal;
+      text-align: left;
+      width: calc(100% / 6);
+      padding: 30px 0;
+    }
+
+    tr {
+      border-bottom: 2px solid $white;
+    }
+
+    td{
+      width: calc(100% / 6);
+      padding: 30px 0;
+      &:first-child {
+        font-weight: 600;
+      }
+    }
+  }
+}

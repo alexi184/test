@@ -21,5 +21,10 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "node-sass": "^4.11.0",
+    "react-id-swiper": "^1.6.8",
+    "react-select": "^2.3.0"
+  }
 }

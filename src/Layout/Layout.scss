@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://allfont.ru/allfont.css?fonts=montserrat-bold');
+@import "../styles/variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html, body {
+  font-size: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: $montserrat;
+  font-size: 1.4rem;
+  color: $greyish-brown;
+}
+
+#root {
+  height: 100%;
+}
+
+.layout {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100%;
+  //padding: 0 20px;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.header, .main, .footer {
+  flex-shrink: 0;
+}
+
+img {
+  /* width: 100%;
+   height: auto;*/
+}
+
+.section-content {
+  padding: 40px 0;
+}
+
+.section-wrapper {
+  width: 100%;
+  padding: 0 20px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+
+.main-title {
+  margin-bottom: 20px;
+  font-family: $montserratBold;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  color: $black;
+  line-height: 1;
+}
+
+.section-title {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-family: $montserratBold;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: $black;
+
+  &_white {
+    color: $white-two;
+  }
+}
